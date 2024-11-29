@@ -69,7 +69,7 @@ const Main = () => {
 
                         :
 
-                        <div className='result items-start py-0 sm:mx-[30px] sm:mx-auto sm:px-0  md:px-[5%] max-h-[70vh] overflow-y-scroll '>
+                        <div className='result items-start py-0 sm:mx-[20px]  sm:px-0  md:px-[5%] max-h-[70vh] overflow-y-scroll '>
                             <div className="result-title items-center  flex sm:my-6 my-10 gap-5">
                                 <FaRegUserCircle className='sm:text-[27px]  md:text-[30px]' />
                                 <p className='sm:text-[18px] md:text-[22px]'>{recentPrompt}</p>
@@ -83,13 +83,13 @@ const Main = () => {
                                         <hr />
                                         <hr />
                                     </div> :
-                                    <p className='sm:mr-2 text-[18px] sm:leading-[30px] leading-[30px]' dangerouslySetInnerHTML={{ __html: resultData }}></p>
+                                    <p className='sm:mr-2 sm:text-[16px] md:text-[16px] sm:leading-[30px] leading-[30px]' dangerouslySetInnerHTML={{ __html: resultData }}></p>
                                 }
                             </div>
                         </div>}
 
 
-                    <div className="main-bottom absolute sm:bottom-[40px] md:bottom-[30px] w-[100%] max-w-[900px] py-0 sm:px-0  px-[20px] m-auto">
+                    <div className="main-bottom absolute sm:bottom-[40px] md:bottom-[50px] w-[100%] max-w-[900px] py-0 sm:px-0  px-[20px] m-auto">
                         <div className="search flex items-center justify-between
                         bg-[#f0f4f9] py-[10px] px-[20px] rounded-[50px]  ">
                             <input type="text" onChange={(e) => { setInput(e.target.value) }} value={Input} placeholder='Ask Gemini'
