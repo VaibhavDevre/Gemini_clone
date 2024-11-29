@@ -38,7 +38,7 @@ const Main = () => {
 
                     {!showResult ?
                         <>
-                            <div className="greet flex items-center justify-center h-[400px] font-semibold  sm:text-[40px]  
+                            <div className="greet flex items-center justify-center sm:h-[300px] md:h-[400px] font-semibold  sm:text-[40px]  
                             mx-0 md:text-[32px] lg:text-[35px] text-[#c4c7c5]  ">
 
                                 <p><span className=''>Hello,Vaibhav.</span></p>
@@ -89,7 +89,7 @@ const Main = () => {
                         </div>}
 
 
-                    <div className="main-bottom absolute sm:bottom-[40px] md:bottom-[50px] w-[100%] max-w-[900px] py-0 sm:px-0  px-[20px] m-auto">
+                    <div className="main-bottom absolute sm:bottom-[50px] sm:mx-4 md:bottom-[50px] w-[100%] max-w-[900px] py-0 sm:px-0  md:px-[20px] md:m-auto">
                         <div className="search flex items-center justify-between
                         bg-[#f0f4f9] py-[10px] px-[20px] rounded-[50px]  ">
                             <input type="text" onChange={(e) => { setInput(e.target.value) }} value={Input} placeholder='Ask Gemini'
